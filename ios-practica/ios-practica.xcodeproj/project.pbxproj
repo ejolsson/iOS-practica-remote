@@ -109,8 +109,8 @@
 		4A1B0778295B666A00BDFB1F /* ios-practica */ = {
 			isa = PBXGroup;
 			children = (
-				4A1B07AA295B669A00BDFB1F /* UI */,
 				4A1B07A9295B668F00BDFB1F /* App */,
+				4A1B07AA295B669A00BDFB1F /* UI */,
 				4A1B0782295B666C00BDFB1F /* Assets.xcassets */,
 				4A1B0784295B666C00BDFB1F /* LaunchScreen.storyboard */,
 				4A1B0787295B666C00BDFB1F /* Info.plist */,
@@ -150,8 +150,7 @@
 			children = (
 				4A1B07B2295B6C7500BDFB1F /* TabBar */,
 				4A1B07AB295B66DC00BDFB1F /* HeroListPage */,
-				4A1B07B7295B6D3B00BDFB1F /* SettingsViewController.swift */,
-				4A1B07B8295B6D3B00BDFB1F /* SettingsViewController.xib */,
+				4A1B07BB295B762D00BDFB1F /* SettingsPage */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -172,6 +171,15 @@
 				4A1B07B4295B6CE300BDFB1F /* TabBarController.xib */,
 			);
 			path = TabBar;
+			sourceTree = "<group>";
+		};
+		4A1B07BB295B762D00BDFB1F /* SettingsPage */ = {
+			isa = PBXGroup;
+			children = (
+				4A1B07B7295B6D3B00BDFB1F /* SettingsViewController.swift */,
+				4A1B07B8295B6D3B00BDFB1F /* SettingsViewController.xib */,
+			);
+			path = SettingsPage;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
