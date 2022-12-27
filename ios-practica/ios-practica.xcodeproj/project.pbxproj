@@ -17,6 +17,10 @@
 		4A1B07AE295B679000BDFB1F /* HeroListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A1B07AC295B679000BDFB1F /* HeroListViewController.swift */; };
 		4A1B07AF295B679000BDFB1F /* HeroListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A1B07AD295B679000BDFB1F /* HeroListViewController.xib */; };
 		4A1B07B1295B6C0E00BDFB1F /* Notes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A1B07B0295B6C0E00BDFB1F /* Notes.swift */; };
+		4A1B07B5295B6CE300BDFB1F /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A1B07B3295B6CE300BDFB1F /* TabBarController.swift */; };
+		4A1B07B6295B6CE300BDFB1F /* TabBarController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A1B07B4295B6CE300BDFB1F /* TabBarController.xib */; };
+		4A1B07B9295B6D3B00BDFB1F /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A1B07B7295B6D3B00BDFB1F /* SettingsViewController.swift */; };
+		4A1B07BA295B6D3B00BDFB1F /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A1B07B8295B6D3B00BDFB1F /* SettingsViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +55,10 @@
 		4A1B07AC295B679000BDFB1F /* HeroListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroListViewController.swift; sourceTree = "<group>"; };
 		4A1B07AD295B679000BDFB1F /* HeroListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeroListViewController.xib; sourceTree = "<group>"; };
 		4A1B07B0295B6C0E00BDFB1F /* Notes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notes.swift; sourceTree = "<group>"; };
+		4A1B07B3295B6CE300BDFB1F /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		4A1B07B4295B6CE300BDFB1F /* TabBarController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TabBarController.xib; sourceTree = "<group>"; };
+		4A1B07B7295B6D3B00BDFB1F /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		4A1B07B8295B6D3B00BDFB1F /* SettingsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingsViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,7 +148,10 @@
 		4A1B07AA295B669A00BDFB1F /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				4A1B07B2295B6C7500BDFB1F /* TabBar */,
 				4A1B07AB295B66DC00BDFB1F /* HeroListPage */,
+				4A1B07B7295B6D3B00BDFB1F /* SettingsViewController.swift */,
+				4A1B07B8295B6D3B00BDFB1F /* SettingsViewController.xib */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -152,6 +163,15 @@
 				4A1B07AD295B679000BDFB1F /* HeroListViewController.xib */,
 			);
 			path = HeroListPage;
+			sourceTree = "<group>";
+		};
+		4A1B07B2295B6C7500BDFB1F /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				4A1B07B3295B6CE300BDFB1F /* TabBarController.swift */,
+				4A1B07B4295B6CE300BDFB1F /* TabBarController.xib */,
+			);
+			path = TabBar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,8 +279,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				4A1B07AF295B679000BDFB1F /* HeroListViewController.xib in Resources */,
+				4A1B07B6295B6CE300BDFB1F /* TabBarController.xib in Resources */,
 				4A1B0786295B666C00BDFB1F /* LaunchScreen.storyboard in Resources */,
 				4A1B0783295B666C00BDFB1F /* Assets.xcassets in Resources */,
+				4A1B07BA295B6D3B00BDFB1F /* SettingsViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,7 +310,9 @@
 				4A1B07AE295B679000BDFB1F /* HeroListViewController.swift in Sources */,
 				4A1B077A295B666A00BDFB1F /* AppDelegate.swift in Sources */,
 				4A1B077C295B666A00BDFB1F /* SceneDelegate.swift in Sources */,
+				4A1B07B5295B6CE300BDFB1F /* TabBarController.swift in Sources */,
 				4A1B07B1295B6C0E00BDFB1F /* Notes.swift in Sources */,
+				4A1B07B9295B6D3B00BDFB1F /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
