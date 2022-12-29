@@ -173,9 +173,9 @@
 		4A1B07AB295B66DC00BDFB1F /* HeroListPage */ = {
 			isa = PBXGroup;
 			children = (
-				4A1B07BC295B794200BDFB1F /* TableCell */,
 				4A1B07AC295B679000BDFB1F /* HeroListViewController.swift */,
 				4A1B07AD295B679000BDFB1F /* HeroListViewController.xib */,
+				4A1B07BC295B794200BDFB1F /* TableCell */,
 			);
 			path = HeroListPage;
 			sourceTree = "<group>";
