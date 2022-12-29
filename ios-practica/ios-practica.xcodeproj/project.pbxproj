@@ -28,6 +28,8 @@
 		4A1B07C6295B7D9E00BDFB1F /* HeroSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A1B07C5295B7D9E00BDFB1F /* HeroSample.swift */; };
 		4A1B07C9295C372F00BDFB1F /* NetworkLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A1B07C8295C372F00BDFB1F /* NetworkLayer.swift */; };
 		4AFE5D83295D7DD200CD1184 /* LocalDataLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AFE5D82295D7DD200CD1184 /* LocalDataLayer.swift */; };
+		4AFE5D87295E276900CD1184 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AFE5D85295E276900CD1184 /* LoginViewController.swift */; };
+		4AFE5D88295E276900CD1184 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4AFE5D86295E276900CD1184 /* LoginViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +74,8 @@
 		4A1B07C5295B7D9E00BDFB1F /* HeroSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroSample.swift; sourceTree = "<group>"; };
 		4A1B07C8295C372F00BDFB1F /* NetworkLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkLayer.swift; sourceTree = "<group>"; };
 		4AFE5D82295D7DD200CD1184 /* LocalDataLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalDataLayer.swift; sourceTree = "<group>"; };
+		4AFE5D85295E276900CD1184 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		4AFE5D86295E276900CD1184 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,6 +167,7 @@
 		4A1B07AA295B669A00BDFB1F /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				4AFE5D84295E273600CD1184 /* LoginPage */,
 				4A1B07B2295B6C7500BDFB1F /* TabBar */,
 				4A1B07AB295B66DC00BDFB1F /* HeroListPage */,
 				4A1B07BB295B762D00BDFB1F /* SettingsPage */,
@@ -223,6 +228,15 @@
 				4AFE5D82295D7DD200CD1184 /* LocalDataLayer.swift */,
 			);
 			path = Managers;
+			sourceTree = "<group>";
+		};
+		4AFE5D84295E273600CD1184 /* LoginPage */ = {
+			isa = PBXGroup;
+			children = (
+				4AFE5D85295E276900CD1184 /* LoginViewController.swift */,
+				4AFE5D86295E276900CD1184 /* LoginViewController.xib */,
+			);
+			path = LoginPage;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -334,6 +348,7 @@
 				4A1B07B6295B6CE300BDFB1F /* TabBarController.xib in Resources */,
 				4A1B0786295B666C00BDFB1F /* LaunchScreen.storyboard in Resources */,
 				4A1B0783295B666C00BDFB1F /* Assets.xcassets in Resources */,
+				4AFE5D88295E276900CD1184 /* LoginViewController.xib in Resources */,
 				4A1B07BA295B6D3B00BDFB1F /* SettingsViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -359,6 +374,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4AFE5D87295E276900CD1184 /* LoginViewController.swift in Sources */,
 				4A1B07AE295B679000BDFB1F /* HeroListViewController.swift in Sources */,
 				4A1B077A295B666A00BDFB1F /* AppDelegate.swift in Sources */,
 				4A1B07C6295B7D9E00BDFB1F /* HeroSample.swift in Sources */,

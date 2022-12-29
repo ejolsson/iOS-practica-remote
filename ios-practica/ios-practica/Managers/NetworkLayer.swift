@@ -56,7 +56,7 @@ final class NetworkLayer {
                 return
             }
             
-            completion(token, nil)
+            completion(token, nil) // L10 3:27:30
         }
         
         task.resume()
