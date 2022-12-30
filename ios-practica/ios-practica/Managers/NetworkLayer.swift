@@ -13,7 +13,7 @@ enum NetworkError: Error {
     case statusCode(code: Int?)
     case decodingFailed
     case unknown
-}
+} // complete
 
 final class NetworkLayer {
     
@@ -60,7 +60,7 @@ final class NetworkLayer {
         }
         
         task.resume()
-    }
+    } // complete
     
     func fetchHeros(token: String?, completion: @escaping ([Hero]?, Error?) -> Void) {
         
@@ -98,7 +98,7 @@ final class NetworkLayer {
         }
         
         task.resume()
-    }
+    } // complete
   
     // TODO: - func fetchTransformations
 }

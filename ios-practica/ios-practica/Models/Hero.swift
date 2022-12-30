@@ -3,7 +3,7 @@
 //  ios-practica
 //
 //  Created by Eric Olsson on 12/27/22.
-//
+//  Hero model for main object data // This file complete ✅
 
 import Foundation
 

@@ -126,8 +126,8 @@
 		4A1B0778295B666A00BDFB1F /* ios-practica */ = {
 			isa = PBXGroup;
 			children = (
-				4A1B07C7295C36ED00BDFB1F /* Managers */,
 				4A1B07C1295B7CE400BDFB1F /* Models */,
+				4A1B07C7295C36ED00BDFB1F /* Managers */,
 				4A1B07A9295B668F00BDFB1F /* App */,
 				4A1B07AA295B669A00BDFB1F /* UI */,
 				4A1B0782295B666C00BDFB1F /* Assets.xcassets */,
