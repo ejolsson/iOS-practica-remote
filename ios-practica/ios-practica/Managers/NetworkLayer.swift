@@ -26,8 +26,8 @@ final class NetworkLayer {
         }
      
         let loginString = "\(email):\(password)"
-        let loginDate: Data = loginString.data(using: .utf8)!
-        let base64 = loginDate.base64EncodedData()
+        let loginData: Data = loginString.data(using: .utf8)!
+        let base64 = loginData.base64EncodedString()
         
         var urlRequest = URLRequest(url: url)
         urlRequest.httpMethod = "POST"

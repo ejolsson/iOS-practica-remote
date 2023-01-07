@@ -24,27 +24,26 @@
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="fondo3" translatesAutoresizingMaskIntoConstraints="NO" id="XO7-Gh-vtI">
                     <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                 </imageView>
-                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yF3-Ae-fi9" userLabel="Email">
-                    <rect key="frame" x="148" y="295" width="97" height="34"/>
+                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yF3-Ae-fi9" userLabel="Email">
+                    <rect key="frame" x="76.666666666666686" y="295" width="240" height="34"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="240" id="B3J-kI-EEe"/>
+                        <constraint firstAttribute="width" constant="240" id="NqA-LD-bkN"/>
                         <constraint firstAttribute="height" constant="34" id="RUA-Md-BFm"/>
-                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="240" id="gzZ-uZ-KFB"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
-                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dvw-X9-wKA" userLabel="Password">
+                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dvw-X9-wKA" userLabel="Password">
                     <rect key="frame" x="76.666666666666686" y="409" width="240" height="34"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="34" id="LkA-MX-av7"/>
                         <constraint firstAttribute="width" constant="240" id="VBM-KW-HH9"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                    <textInputTraits key="textInputTraits"/>
+                    <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                 </textField>
-                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="67f-on-mHY" userLabel="Login">
-                    <rect key="frame" x="164" y="523" width="66" height="35"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="67f-on-mHY" userLabel="Login">
+                    <rect key="frame" x="159" y="523" width="75" height="35"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="75" id="V45-fN-DgT"/>
                     </constraints>
@@ -60,7 +59,9 @@
             <constraints>
                 <constraint firstItem="XO7-Gh-vtI" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="5SJ-fV-lkz"/>
                 <constraint firstItem="67f-on-mHY" firstAttribute="top" secondItem="dvw-X9-wKA" secondAttribute="bottom" constant="80" id="AMy-9P-SNV"/>
+                <constraint firstItem="yF3-Ae-fi9" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Lm9-94-duE"/>
                 <constraint firstItem="XO7-Gh-vtI" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="NQy-Cb-yNZ"/>
+                <constraint firstItem="67f-on-mHY" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Pvr-Yd-xvU"/>
                 <constraint firstItem="XO7-Gh-vtI" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="WtN-OL-svK"/>
                 <constraint firstItem="dvw-X9-wKA" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="c60-ur-hYo"/>
                 <constraint firstItem="dvw-X9-wKA" firstAttribute="top" secondItem="yF3-Ae-fi9" secondAttribute="bottom" constant="80" id="dwG-oK-wnY"/>
