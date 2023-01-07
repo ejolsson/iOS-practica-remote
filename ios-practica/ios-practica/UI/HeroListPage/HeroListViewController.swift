@@ -10,7 +10,7 @@ import UIKit
 struct HeroCellItem {
     let image: UIImage
     let text: String
-}
+} // done
 
 class HeroListViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
@@ -72,8 +72,28 @@ class HeroListViewController: UIViewController, UITableViewDelegate, UITableView
         tableView.delegate = self
         tableView.dataSource = self
         
+        navigationItem.title = "Heros"
+        
         let xib = UINib(nibName: "TableViewCell", bundle: nil)
-        tableView.register(xib, forCellReuseIdentifier: "customTableCell")
+        tableView.register(xib, forCellReuseIdentifier: "customTableCell") // Look at his "customTableCell if errors occur ⚠️
+        
+        let token = LocalDataLayer.shared.getToken()
+        
+        NetworkLayer.shared.fetchHeros(token: token) { [weak self] allHeros, error in
+            guard let self = self else { return }
+            
+            if let allHeros = allHeros {
+                self.heros = allHeros
+                
+                LocalDataLayer.shared.save(heros: allHeros)
+                
+                DispatchQueue.main.async {
+                    self.tableView.reloadData()
+                }
+            } else {
+                print("Error fetching heros: ", error?.localizedDescription ?? "")
+            }
+        }
     }
     
 }
@@ -86,7 +106,9 @@ extension UIImageView {
                 completion(nil)
                 return
             }
-        }
+            
+            completion(image)
+        }.resume()
     }
     
     func setImage(url: String) {
