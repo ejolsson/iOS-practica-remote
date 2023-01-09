@@ -57,12 +57,12 @@ class HeroListViewController: UIViewController, UITableViewDelegate, UITableView
     } // should be complete
     
     // TODO: - Update for DetailsViewController // COMMNETED OUT UNTIL BUILT OUT -
-//    func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
-//        let hero = heros[indexPath.row]
-//        let detailsView = DetailsViewController()
-//        detailsView.hero = hero
-//        navigationController?.pushViewController(detailsView, animated: true)
-//    }
+    func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) { // enables detailsView viewing
+        let hero = heros[indexPath.row]
+        let detailsView = DetailsViewController()
+        detailsView.hero = hero
+        navigationController?.pushViewController(detailsView, animated: true)
+    }
     
 // MARK: - Execute List -
     
