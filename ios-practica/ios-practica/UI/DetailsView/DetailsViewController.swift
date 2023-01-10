@@ -29,6 +29,7 @@ class DetailsViewController: UIViewController {
         heroImageView.setImage(url: hero.photo)
         heroTitleLabel.text = hero.name
         heroDescLabel.text = hero.description
+        //heroDescLabel.sizeToFit() // attempting to align text to top of label
         
         let token = LocalDataLayer.shared.getToken()
         
