@@ -16,8 +16,11 @@ class DetailsViewController: UIViewController {
     @IBOutlet weak var transformationButton: UIButton!
     
     @IBAction func transformationsButtonTapped(_ sender: Any) {
-        // TODO: - Code transformation button -
-    }
+        let transView = TransformationViewController()
+        transView.transformations = self.transformations
+        
+        navigationController?.pushViewController(transView, animated: true)
+    } // complete
     
     var hero: Hero!
     var transformations: [Transformation] = []
@@ -33,7 +36,24 @@ class DetailsViewController: UIViewController {
         
         let token = LocalDataLayer.shared.getToken()
         
-        // NetworkLayer.shared.fetch
+        NetworkLayer
+            .shared
+            .fetchTransformations(token: token, heroId: hero.id) { [weak self] allTrans, error in
+                guard let self = self else { return }
+                
+                if let allTrans = allTrans {
+                    
+                    print("Transformation count: ", allTrans.count)
+                    
+                    if !self.transformations.isEmpty {
+                        DispatchQueue.main.async {
+                            self.transformationButton.alpha = 1 // try 0 if not liked
+                        }
+                    }
+                } else {
+                    print("Error fetching transformations: ", error?.localizedDescription ?? "")
+                }
+            }
         }
 
 }
