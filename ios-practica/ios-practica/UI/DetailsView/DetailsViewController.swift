@@ -18,7 +18,7 @@ class DetailsViewController: UIViewController {
     @IBAction func transformationsButtonTapped(_ sender: Any) {
         let transView = TransformationViewController()
         transView.transformations = self.transformations
-        
+        print("Transformation button tapped")
         navigationController?.pushViewController(transView, animated: true)
     } // complete
     

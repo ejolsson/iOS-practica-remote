@@ -114,14 +114,22 @@ final class NetworkLayer {
         urlRequest.setValue("Bearer \(token ?? "")", forHTTPHeaderField: "Authorization")
         urlRequest.httpBody = urlComponents.query?.data(using: .utf8)
         
+        
         let task = URLSession.shared.dataTask(with: urlRequest) { data, response, error in
             guard error == nil else {
                 completion(nil, error)
                 return
+            } // complete
+            
+            guard (response as? HTTPURLResponse)?.statusCode == 200 else {
+                let statusCode = (response as? HTTPURLResponse)?.statusCode
+                completion(nil, NetworkError.statusCode(code: statusCode))
+                print("Error loading URL: Status error --> ", (response as? HTTPURLResponse)?.statusCode ?? -1)
+                return
             }
             
             guard let data = data else {
-                completion(nil, NetworkError.decodingFailed)
+                completion(nil, NetworkError.noData)
                 return
             }
             

@@ -13,9 +13,23 @@ class TransformationViewController: UIViewController, UITableViewDelegate, UITab
     
     var transformations: [Transformation]!
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        tableView.delegate = self
+        tableView.dataSource = self
+        
+        navigationItem.title = "Transformations"
+        print("TransformationViewController viewDidLoad")
+        print("\(transformations.count)")
+        
+        let xib = UINib(nibName: "TableViewCell", bundle: nil)
+        tableView.register(xib, forCellReuseIdentifier: "customTableCell") // TableViewCell or customTableCell
+    } // complete
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return transformations.count
-    } // complete
+    } // complete, gtg
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "customTableCell", for: indexPath) as! TableViewCell
@@ -27,24 +41,14 @@ class TransformationViewController: UIViewController, UITableViewDelegate, UITab
         cell.descriptionLabel.text = hero.description
         cell.accessoryType = .disclosureIndicator
         cell.selectionStyle = .none
-        
+        print("tableView cellForRowAt...")
         return cell
-    } // complete
+    } // complete, gtg
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 140
-    } // complete
+    } // complete, gtg
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
 
-        tableView.delegate = self
-        tableView.dataSource = self
-        
-        navigationItem.title = "Transformations"
-        
-        let xib = UINib(nibName: "TableViewCell", bundle: nil)
-        tableView.register(xib, forCellReuseIdentifier: "customTableCell") // try TableViewCell if no dice, previous = customTableCell
-    } // complete
     
 }

@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TransformationViewController" customModule="ios_practica" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TransformationsViewController" customModule="ios_practica" customModuleProvider="target">
             <connections>
                 <outlet property="tableView" destination="JbH-M3-vWp" id="aRb-Ts-wKD"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
@@ -27,10 +27,10 @@
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="JbH-M3-vWp" secondAttribute="bottom" id="3sP-Dj-Kj0"/>
-                <constraint firstItem="JbH-M3-vWp" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="E3s-81-y42"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="JbH-M3-vWp" secondAttribute="trailing" id="Zl0-3J-V58"/>
-                <constraint firstItem="JbH-M3-vWp" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="aII-wD-JYv"/>
+                <constraint firstItem="JbH-M3-vWp" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="2oo-df-Pa8"/>
+                <constraint firstItem="JbH-M3-vWp" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="5J9-sd-Kkp"/>
+                <constraint firstItem="JbH-M3-vWp" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="lLE-66-G0F"/>
+                <constraint firstItem="JbH-M3-vWp" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="u5o-Ry-gqT"/>
             </constraints>
             <point key="canvasLocation" x="-100" y="20"/>
         </view>
