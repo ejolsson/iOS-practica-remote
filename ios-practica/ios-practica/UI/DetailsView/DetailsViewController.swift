@@ -43,6 +43,8 @@ class DetailsViewController: UIViewController {
                 
                 if let allTrans = allTrans {
                     
+                    self.transformations = allTrans
+                    
                     print("Transformation count: ", allTrans.count)
                     
                     if !self.transformations.isEmpty {
