@@ -20,7 +20,7 @@ class TransformationViewController: UIViewController, UITableViewDelegate, UITab
         tableView.dataSource = self
         
         navigationItem.title = "Transformations"
-        print("TransformationViewController viewDidLoad")
+        
         print("\(transformations.count)")
         
         let xib = UINib(nibName: "TableViewCell", bundle: nil)
@@ -41,7 +41,7 @@ class TransformationViewController: UIViewController, UITableViewDelegate, UITab
         cell.descriptionLabel.text = hero.description
         cell.accessoryType = .disclosureIndicator
         cell.selectionStyle = .none
-        print("tableView cellForRowAt...")
+        
         return cell
     } // complete, gtg
     

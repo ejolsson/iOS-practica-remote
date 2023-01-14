@@ -24,8 +24,7 @@ class TransformationDetailViewController: UIViewController {
         transformationImageView.setImage(url: transformation.photo)
         transformationNameLabel.text = transformation.name
         transformationDescLabel.text = transformation.description
-        
-        
+        transformationDescLabel.sizeToFit()
     }
 
 }
