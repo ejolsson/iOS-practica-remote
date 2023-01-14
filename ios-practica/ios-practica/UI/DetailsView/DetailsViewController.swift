@@ -29,6 +29,8 @@ class DetailsViewController: UIViewController {
         super.viewDidLoad()
         
         title = hero.name
+        transformationButton.alpha = 0
+        
         heroImageView.setImage(url: hero.photo)
         heroTitleLabel.text = hero.name
         heroDescLabel.text = hero.description
@@ -49,7 +51,7 @@ class DetailsViewController: UIViewController {
                     
                     if !self.transformations.isEmpty {
                         DispatchQueue.main.async {
-                            self.transformationButton.alpha = 1 // try 0 if not liked
+                            self.transformationButton.alpha = 1
                         }
                     }
                 } else {
