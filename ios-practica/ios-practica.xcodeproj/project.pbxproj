@@ -28,6 +28,8 @@
 		4A1B07C9295C372F00BDFB1F /* NetworkLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A1B07C8295C372F00BDFB1F /* NetworkLayer.swift */; };
 		4A22312029730BD0004A7CE7 /* HeroTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A22311F29730BD0004A7CE7 /* HeroTests.swift */; };
 		4A223122297313C6004A7CE7 /* TransformationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A223121297313C6004A7CE7 /* TransformationTests.swift */; };
+		4A223126297351ED004A7CE7 /* TransformationDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A223124297351ED004A7CE7 /* TransformationDetailViewController.swift */; };
+		4A223127297351ED004A7CE7 /* TransformationDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A223125297351ED004A7CE7 /* TransformationDetailViewController.xib */; };
 		4A26A2B4296C0201008EE2E6 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A26A2B2296C0201008EE2E6 /* DetailsViewController.swift */; };
 		4A26A2B5296C0201008EE2E6 /* DetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A26A2B3296C0201008EE2E6 /* DetailsViewController.xib */; };
 		4A26A2B7296C0E32008EE2E6 /* Transformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A26A2B6296C0E32008EE2E6 /* Transformation.swift */; };
@@ -81,6 +83,8 @@
 		4A1B07C8295C372F00BDFB1F /* NetworkLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkLayer.swift; sourceTree = "<group>"; };
 		4A22311F29730BD0004A7CE7 /* HeroTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroTests.swift; sourceTree = "<group>"; };
 		4A223121297313C6004A7CE7 /* TransformationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransformationTests.swift; sourceTree = "<group>"; };
+		4A223124297351ED004A7CE7 /* TransformationDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransformationDetailViewController.swift; sourceTree = "<group>"; };
+		4A223125297351ED004A7CE7 /* TransformationDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TransformationDetailViewController.xib; sourceTree = "<group>"; };
 		4A26A2B2296C0201008EE2E6 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		4A26A2B3296C0201008EE2E6 /* DetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailsViewController.xib; sourceTree = "<group>"; };
 		4A26A2B6296C0E32008EE2E6 /* Transformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transformation.swift; sourceTree = "<group>"; };
@@ -186,6 +190,7 @@
 				4A1B07AB295B66DC00BDFB1F /* HeroListPage */,
 				4A26A2B1296C01E1008EE2E6 /* DetailsView */,
 				4A968455296E9C210020A804 /* TransformationsView */,
+				4A223123297351BD004A7CE7 /* TransformationDetails */,
 				4A1B07BB295B762D00BDFB1F /* SettingsPage */,
 			);
 			path = UI;
@@ -245,6 +250,15 @@
 				4AFE5D82295D7DD200CD1184 /* LocalDataLayer.swift */,
 			);
 			path = Managers;
+			sourceTree = "<group>";
+		};
+		4A223123297351BD004A7CE7 /* TransformationDetails */ = {
+			isa = PBXGroup;
+			children = (
+				4A223124297351ED004A7CE7 /* TransformationDetailViewController.swift */,
+				4A223125297351ED004A7CE7 /* TransformationDetailViewController.xib */,
+			);
+			path = TransformationDetails;
 			sourceTree = "<group>";
 		};
 		4A26A2B1296C01E1008EE2E6 /* DetailsView */ = {
@@ -382,6 +396,7 @@
 				4A1B07C0295B79A400BDFB1F /* TableViewCell.xib in Resources */,
 				4A1B07B6295B6CE300BDFB1F /* TabBarController.xib in Resources */,
 				4A1B0786295B666C00BDFB1F /* LaunchScreen.storyboard in Resources */,
+				4A223127297351ED004A7CE7 /* TransformationDetailViewController.xib in Resources */,
 				4A1B0783295B666C00BDFB1F /* Assets.xcassets in Resources */,
 				4AFE5D88295E276900CD1184 /* LoginViewController.xib in Resources */,
 				4A1B07BA295B6D3B00BDFB1F /* SettingsViewController.xib in Resources */,
@@ -423,6 +438,7 @@
 				4A1B07B1295B6C0E00BDFB1F /* Notes.swift in Sources */,
 				4A1B07BF295B79A400BDFB1F /* TableViewCell.swift in Sources */,
 				4A1B07C9295C372F00BDFB1F /* NetworkLayer.swift in Sources */,
+				4A223126297351ED004A7CE7 /* TransformationDetailViewController.swift in Sources */,
 				4AFE5D83295D7DD200CD1184 /* LocalDataLayer.swift in Sources */,
 				4A26A2B4296C0201008EE2E6 /* DetailsViewController.swift in Sources */,
 				4A1B07B9295B6D3B00BDFB1F /* SettingsViewController.swift in Sources */,

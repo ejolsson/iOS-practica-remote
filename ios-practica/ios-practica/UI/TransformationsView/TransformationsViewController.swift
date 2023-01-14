@@ -49,6 +49,15 @@ class TransformationViewController: UIViewController, UITableViewDelegate, UITab
         return 140
     } // complete, gtg
     
-
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) { // enables transformationDetailsView viewing
+        let transformation = transformations[indexPath.row]
+        let transDetailsView = TransformationDetailViewController()
+        transDetailsView.transformation = transformation
+        navigationController?.pushViewController(transDetailsView, animated: true)
+    }
+    
+    func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
+        // empty
+    }
     
 }
